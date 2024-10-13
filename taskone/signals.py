@@ -4,10 +4,8 @@
 from django.dispatch import Signal, receiver
 import time
 
-# Define a custom signal
 my_signal = Signal()
 
-# Define a receiver function that simulates a time-consuming task
 @receiver(my_signal)
 def my_receiver(sender, **kwargs):
     print("Receiver started")
