@@ -9,5 +9,5 @@ my_signal = Signal()
 @receiver(my_signal)
 def my_receiver(sender, **kwargs):
     print("Receiver started")
-    time.sleep(3)  # Simulating a 3-second delay
+    time.sleep(3)  # 3-second delay
     print("Receiver finished")
